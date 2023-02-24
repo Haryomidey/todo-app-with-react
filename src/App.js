@@ -15,22 +15,24 @@ const App = () => {
   
   return (
     <div className="App">
-      <h1>Todo App</h1>
-      <InputField
-        inputValue={inputValue}
-        setInputValue={setInputValue}
-        todos={todos}
-        setTodos={setTodos}
-        editTodo={editTodo}
-        setEditTodo={setEditTodo}
-      />
-        
-      <InputList
-        todos={todos}
-        setTodos={setTodos}
-        editTodo={editTodo}
-        setEditTodo={setEditTodo}
-      />
+      <div className="todo-container">
+        <h1>Todo App</h1>
+        <InputField
+          inputValue={inputValue}
+          setInputValue={setInputValue}
+          todos={todos}
+          setTodos={setTodos}
+          editTodo={editTodo}
+          setEditTodo={setEditTodo}
+        />
+          
+        <InputList
+          todos={todos}
+          setTodos={setTodos}
+          editTodo={editTodo}
+          setEditTodo={setEditTodo}
+        />
+      </div>
     </div>
   );
 }
