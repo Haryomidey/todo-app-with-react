@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=East+Sea+Dokdo&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;500;600;700;800;900&family=Padyakke+Expanded+One&family=Poppins:wght@100&family=Quicksand:wght@300;400;500;600&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60%;
+  user-select: none;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: rgb(135, 127, 106);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.App{
+  width: 400px;
+  min-height: 500px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: rgba(190, 189, 189, 0.82);
+  box-shadow: 0px 0px 10px 4px rgba(104, 103, 103, 0.746);
+}
+
+.App h1{
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.input-field{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+input, button{
+  outline: none;
+  border: 0;
+  padding: 15px 10px;
+  font-size: 1.6rem;
+}
+
+input{
+  width: 80%;
+  max-width: 80%;
+  font-weight: 500;
+}
+
+button{
+  width: 20%;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgb(135, 127, 106);
+  color: white;
+}
+
+.input-list{
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.input-text, .input-function{
+  border: 1px solid rgba(0, 0, 0, 0.394);
+}
+
+.input-text{
+  font-size: 1.8rem;
+  padding: 5px;
+  font-weight: 600;
+  color: rgba(11, 11, 11, 0.949);
+  word-break: break-all;
+}
+
+.input-text.active{
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.481);
+}
+
+.input-function{
+  border-top: 0;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.input-function span{
+  cursor: pointer;
+}
+
+.input-function span:nth-child(1){
+  color: rgba(15, 80, 69, 0.756);
+}
+
+.input-function span:last-child{
+  color: rgba(255, 0, 0, 0.756);
+}
